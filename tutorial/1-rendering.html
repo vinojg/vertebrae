@@ -17,10 +17,10 @@
  */
 var renderSomethingOnThePage = function(message) {
   /* We will use jQuery to append a message to the page,
-   * but we dont want all of this HTML to be in the `el.append` function call.
+   * but we dont want all of this HTML to be in the `.append` function call.
    *
-   * Instead, we break it out first into a variable called `$element`.
-   * Now, we can call the `el.append` method with the `$element` variable.
+   * Instead, we break it out first into a variable called `html`.
+   * Now, we can call the `.append` method with the `html` variable.
    *
    * This also allows us to space out the html as we're used to,
    * with indents to make it easier to read.
@@ -37,7 +37,7 @@ var renderSomethingOnThePage = function(message) {
   /* Question:
    * How would you modify this template to add style to the look of the page?
    *
-   * _Look below for one possible solution._
+   * _Look below in the 'ANSWERS' section for one possible solution._
    */
 
   /* Here is the jQuery call to append this html string to the page's body.
@@ -130,20 +130,21 @@ var Message = Backbone.Model.extend({
   }
 });
 
-/* How would you call the second method?
- *
- * Try it yourself, then check out the answer at the bottom of this script.
- */
-
-
 // Let's try it out: 'instantiate' an instance of the class defined above:
 var myNewMessage = new Message();
 
 // ...and then make a change on that model to see it render
 myNewMessage.set({message: 'someMessage'});
 
+/* How would you call the alertThisMessage method?
+ *
+ * Try it yourself, then check out the answer at the bottom of this script.
+ */
 
-/* Once the model is rendering on the `change` event, move on to step 3!
+// YOUR CODE HERE
+
+/* Once the model is rendering on the `change` event, move on to views! But
+ * first, read this summary!
  *
  * So far we have created models by extending Backbone.Model,
  * and we have gone over event listeners for models.

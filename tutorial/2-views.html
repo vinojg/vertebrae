@@ -26,15 +26,19 @@ var Comment = Backbone.Model.extend({
   initialize: function(message) {
     /* Set the initial values for `votes` to 0 and `message` to the message.
      * Remember to use setters when working with attributes! */
+    // YOUR CODE HERE
   },
   votes: function() {
     /* Return the votes attribute on this model.
      * Remember to use a getter when working with attributes! */
+     // YOUR CODE HERE
   },
   upvote: function(){
     // Set the `votes` attribute to the current vote count plus one.
+    // YOUR CODE HERE
   }
   // Add a downvote function; don't forget the comma above.
+  // YOUR CODE HERE
 });
 
 /* - Backbone VIEW ------------------------------------------------------------
@@ -156,6 +160,8 @@ var commentView = new CommentView({ model: comment });
  *
  * Try voting up and voting down a couple of times and
  * watch the eventlistener auto update the view.  Pretty cool, eh?
+ *
+ * Now you can move on to collections!
  */
     </script>
   </body>
